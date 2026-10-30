@@ -1,0 +1,8 @@
+{
+  "cli": { "version": ">=27.2.0", "appVersionSource": "remote" },
+  "build": {
+    "development": { "distribution": "internal", "android": { "buildType": "apk" }, "env": { "EXPO_PUBLIC_ENABLE_CLOUD": "false" } },
+    "preview": { "distribution": "internal", "android": { "buildType": "apk" }, "env": { "EXPO_PUBLIC_ENABLE_CLOUD": "false" } },
+    "production": { "autoIncrement": true, "android": { "buildType": "app-bundle" }, "env": { "EXPO_PUBLIC_ENABLE_CLOUD": "false" } }
+  }
+}

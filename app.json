@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "FileBe",
+    "slug": "filebe",
+    "version": "1.1.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "scheme": "filebe",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.filebe.app",
+      "infoPlist": {
+        "UIFileSharingEnabled": true,
+        "LSSupportsOpeningDocumentsInPlace": true,
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.filebe.app",
+      "softwareKeyboardLayoutMode": "resize",
+      "allowBackup": false,
+      "blockedPermissions": ["android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.MANAGE_EXTERNAL_STORAGE", "android.permission.RECORD_AUDIO"]
+    },
+    "plugins": [
+      ["expo-splash-screen", { "image": "./assets/splash.png", "imageWidth": 180, "resizeMode": "contain", "backgroundColor": "#eff4fc" }],
+      "expo-document-picker",
+      "expo-secure-store"
+    ]
+  }
+}
